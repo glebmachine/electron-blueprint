@@ -1,0 +1,14 @@
+{
+  "name": "blueprint",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main":"electron.js",
+  "scripts": {
+    "prebuild": "cp electron-package.json dist/package.json && cp electron.js dist/electron.js",
+    "build": "electron-packager dist --platform=win32 --overwrite"
+  },
+  "dependencies": {
+    "electron": "15.1.2",
+    "electron-packager": "15.2.0"
+  }
+}
